@@ -35,6 +35,7 @@ RUN bundle install
 
 COPY . ${ROOT}
 
+RUN yarn install
 RUN rails assets:precompile
 RUN yarn cache clean
 RUN rm -rf node_modules tmp/cache
