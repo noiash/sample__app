@@ -30,7 +30,7 @@ RUN touch ~/.bashrc \
 COPY Gemfile ${ROOT}
 COPY Gemfile.lock ${ROOT}
 
-# RUN bundle config set without development test
+#RUN bundle config set without development test
 RUN bundle install
 
 COPY . ${ROOT}
