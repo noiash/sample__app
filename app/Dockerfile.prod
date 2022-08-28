@@ -8,6 +8,7 @@ WORKDIR ${ROOT}
 RUN apk update && \
     apk upgrade && \
     apk add --no-cache \
+        imagemagick \
         gcc \
         g++ \
         libc-dev \
