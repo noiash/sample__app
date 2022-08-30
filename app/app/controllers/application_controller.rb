@@ -1,5 +1,11 @@
 class ApplicationController < ActionController::Base
+  # before_action :set_search
   include SessionsHelper
+
+  # def set_search
+  #   @search = User.ransack(params[:q]) #ransackメソッド推奨
+  #   @search_users = @search.result.paginate(page: params[:page])
+  # end
 
   private
 
